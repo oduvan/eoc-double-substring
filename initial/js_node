@@ -1,17 +1,15 @@
-"use strict";
 
-function doubleSubstring(line) {
-    // length of the longest substring that non-overlapping repeats more than once.
-
+export function doubleSubstring(line) {
     // your code here
     return 0;
 }
 
-var assert = require('assert');
+import * as assert from 'assert';
 
-if (!global.is_checking) {
-    assert.equal(doubleSubstring('aaaa'), 2, "First")
-    assert.equal(doubleSubstring('abc'), 0, "Second")
-    assert.equal(doubleSubstring('aghtfghkofgh'), 3, "Third")
-    console.log('"Run" is good. How is "Check"?');
-}
+console.log('Example:');
+console.log(doubleSubstring('aaaa'));
+
+assert.equal(doubleSubstring('aaaa'), 2)
+assert.equal(doubleSubstring('abc'), 0)
+assert.equal(doubleSubstring('aghtfghkofgh'), 3)
+console.log('"Run" is good. How is "Check"?');
